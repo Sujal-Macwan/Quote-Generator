@@ -10,3 +10,7 @@ Currently, two official plugins are available:
 ## Expanding the ESLint configuration
 
 If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+## Known Limitations
+
+Due to CORS restrictions on the ZenQuotes API, the fetch request from the frontend will be blocked by browsers. The professional solution is to create a backend proxy server to handle API calls securely. For this practice project, only frontend implementation is demonstrated.
